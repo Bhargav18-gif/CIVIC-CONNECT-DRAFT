@@ -1,0 +1,28 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch & Hugging Face checkpoints
+model/checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# Large model weights (use Git LFS or Hugging Face Hub for distribution)
+model/civicconnect-admin-classifier/*.safetensors
+model/civicconnect-admin-classifier/*.bin
+
+# Local environment variables & secrets
+.env
+.env.local
+
+# Local runtime logs & private feedback data
+*.log
+dataset/admin_feedback.jsonl

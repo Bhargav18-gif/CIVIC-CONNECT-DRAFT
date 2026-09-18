@@ -1,0 +1,422 @@
+{
+  "model_dir": "C:\\Users\\ROHIT KUMAR\\Downloads\\CIVIC-CONNECT-DRAFT-main\\CIVIC-CONNECT-DRAFT-main\\antigravitycivicconnect-main\\ai\\model\\production\\civicconnect-admin-v1.0.0",
+  "accuracy": 0.086,
+  "macro_f1": 0.037415899022173876,
+  "macro_precision": 0.035194671126548886,
+  "macro_recall": 0.08600000000000001,
+  "weighted_f1": 0.037415899022173876,
+  "per_class_results": {
+    "Roads": {
+      "precision": 0.06382978723404255,
+      "recall": 0.048,
+      "f1": 0.0547945205479452,
+      "support": 125
+    },
+    "Water": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 125
+    },
+    "Electricity": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 125
+    },
+    "Sanitation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 125
+    },
+    "Drainage": {
+      "precision": 0.04285714285714286,
+      "recall": 0.024,
+      "f1": 0.03076923076923077,
+      "support": 125
+    },
+    "Traffic": {
+      "precision": 0.09290322580645162,
+      "recall": 0.576,
+      "f1": 0.16,
+      "support": 125
+    },
+    "Public Health": {
+      "precision": 0.08196721311475409,
+      "recall": 0.04,
+      "f1": 0.053763440860215055,
+      "support": 125
+    },
+    "Municipal Services": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 125
+    }
+  },
+  "confusion_matrix": [
+    [
+      6,
+      0,
+      0,
+      0,
+      12,
+      104,
+      3,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      17,
+      103,
+      3,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      6,
+      103,
+      9,
+      0
+    ],
+    [
+      11,
+      0,
+      0,
+      0,
+      6,
+      101,
+      7,
+      0
+    ],
+    [
+      14,
+      0,
+      0,
+      0,
+      3,
+      102,
+      6,
+      0
+    ],
+    [
+      26,
+      0,
+      0,
+      0,
+      5,
+      72,
+      22,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      0,
+      7,
+      104,
+      5,
+      0
+    ],
+    [
+      19,
+      0,
+      0,
+      0,
+      14,
+      86,
+      6,
+      0
+    ]
+  ],
+  "test_dataset": {
+    "dataset_name": "Isolated Test Set",
+    "sample_count": 1000,
+    "accuracy": 0.086,
+    "macro_f1": 0.037415899022173876,
+    "macro_precision": 0.035194671126548886,
+    "macro_recall": 0.08600000000000001,
+    "weighted_f1": 0.037415899022173876,
+    "per_class_results": {
+      "Roads": {
+        "precision": 0.06382978723404255,
+        "recall": 0.048,
+        "f1": 0.0547945205479452,
+        "support": 125
+      },
+      "Water": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 125
+      },
+      "Electricity": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 125
+      },
+      "Sanitation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 125
+      },
+      "Drainage": {
+        "precision": 0.04285714285714286,
+        "recall": 0.024,
+        "f1": 0.03076923076923077,
+        "support": 125
+      },
+      "Traffic": {
+        "precision": 0.09290322580645162,
+        "recall": 0.576,
+        "f1": 0.16,
+        "support": 125
+      },
+      "Public Health": {
+        "precision": 0.08196721311475409,
+        "recall": 0.04,
+        "f1": 0.053763440860215055,
+        "support": 125
+      },
+      "Municipal Services": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 125
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0,
+        0,
+        12,
+        104,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        17,
+        103,
+        3,
+        0
+      ],
+      [
+        7,
+        0,
+        0,
+        0,
+        6,
+        103,
+        9,
+        0
+      ],
+      [
+        11,
+        0,
+        0,
+        0,
+        6,
+        101,
+        7,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0,
+        3,
+        102,
+        6,
+        0
+      ],
+      [
+        26,
+        0,
+        0,
+        0,
+        5,
+        72,
+        22,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        7,
+        104,
+        5,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        14,
+        86,
+        6,
+        0
+      ]
+    ]
+  },
+  "golden_dataset": {
+    "dataset_name": "Golden Real World Set",
+    "sample_count": 80,
+    "accuracy": 0.0625,
+    "macro_f1": 0.016666666666666666,
+    "macro_precision": 0.009615384615384616,
+    "macro_recall": 0.0625,
+    "weighted_f1": 0.016666666666666666,
+    "per_class_results": {
+      "Roads": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Water": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Electricity": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Sanitation": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Drainage": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Traffic": {
+        "precision": 0.07692307692307693,
+        "recall": 0.5,
+        "f1": 0.13333333333333333,
+        "support": 10
+      },
+      "Public Health": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "Municipal Services": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2,
+        6,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        5,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    ]
+  }
+}

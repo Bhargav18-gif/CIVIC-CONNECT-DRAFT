@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isRole(r) {
+      return isAuthenticated() && (request.auth.token.role == r || request.auth.token[r] == true);
+    }
+
+    function isAdmin() {
+      return isRole('admin');
+    }
+
+    function isDepartment() {
+      return isRole('department') || isRole('department_head') || isRole('department_supervisor') || isRole('department_user') || isAdmin();
+    }
+
+    function isEngineer() {
+      return isRole('engineer') || isDepartment();
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+    }
+
+    // Complaints Collection
+    match /complaints/{complaintId} {
+      allow read: if isAuthenticated() && (
+        request.auth.uid == resource.data.userId ||
+        request.auth.token.email == resource.data.userEmail ||
+        isEngineer()
+      );
+      
+      allow create: if isAuthenticated();
+
+      allow update: if isAuthenticated() && (
+        // Citizen reopening or giving feedback on their own complaint
+        request.auth.uid == resource.data.userId ||
+        // Engineer updating work status on assigned complaint
+        (isEngineer() && (resource.data.assignedEngineerId == request.auth.uid || resource.data.assignment.engineerId == request.auth.uid)) ||
+        // Department / Admin supervisor
+        isDepartment()
+      );
+
+      allow delete: if isAdmin();
+
+      // Work Evidence Subcollection
+      match /workEvidence/{evidenceId} {
+        allow read: if isAuthenticated();
+        allow create, update: if isEngineer();
+        allow delete: if isDepartment();
+      }
+    }
+
+    // Departments Collection
+    match /departments/{deptId} {
+      allow read: if isAuthenticated();
+      allow write: if isDepartment();
+    }
+
+    // Engineers Collection
+    match /engineers/{engineerId} {
+      allow read: if isAuthenticated();
+      allow write: if isDepartment();
+    }
+
+    // Resources Collection
+    match /resources/{resId} {
+      allow read: if isAuthenticated();
+      allow write: if isDepartment();
+    }
+
+    // Complaint Lifecycle Audit Events (Immutable)
+    match /complaint_events/{eventId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update, delete: if false; // strictly immutable
+    }
+
+    // Notifications Collection
+    match /notifications/{notificationId} {
+      allow read, update: if isAuthenticated();
+      allow create: if isAuthenticated();
+    }
+
+    // AI Feedback & Overrides
+    match /ai_feedback/{feedbackId} {
+      allow read, write: if isDepartment();
+    }
+
+    match /ai_assignment_overrides/{overrideId} {
+      allow read, write: if isDepartment();
+    }
+  }
+}

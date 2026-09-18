@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-09T14:00:13.499922+00:00",
+  "total_examples": 10000,
+  "examples_per_department": {
+    "Roads": 1250,
+    "Water": 1250,
+    "Electricity": 1250,
+    "Sanitation": 1250,
+    "Drainage": 1250,
+    "Traffic": 1250,
+    "Public Health": 1250,
+    "Municipal Services": 1250
+  },
+  "duplicate_count": 0,
+  "near_duplicate_count": 0,
+  "invalid_count": 0,
+  "short_example_count": 0,
+  "class_balance": "Perfect (1,250 per department across all 8 classes)",
+  "train_count": 8000,
+  "validation_count": 1000,
+  "test_count": 1000,
+  "leakage_detected": false,
+  "leakage_train_val_overlap": 0,
+  "leakage_train_test_overlap": 0,
+  "leakage_val_test_overlap": 0,
+  "quality_passed": true,
+  "quality_failed": false,
+  "vocabulary_size": 2972,
+  "average_complaint_character_length": 131.65
+}

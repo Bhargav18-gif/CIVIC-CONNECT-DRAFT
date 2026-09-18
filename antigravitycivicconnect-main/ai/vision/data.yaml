@@ -1,0 +1,22 @@
+path: ../ai/vision
+train: images/train
+val: images/val
+test: images/test
+
+# Classes:
+# 0: pothole -> Roads
+# 1: garbage_dump -> Sanitation
+# 2: water_leak -> Water
+# 3: broken_streetlight -> Electricity
+# 4: drain_blockage -> Drainage
+# 5: traffic_signal_damage -> Traffic
+# 6: damaged_tree -> Municipal Services
+
+names:
+  0: pothole
+  1: garbage_dump
+  2: water_leak
+  3: broken_streetlight
+  4: drain_blockage
+  5: traffic_signal_damage
+  6: damaged_tree

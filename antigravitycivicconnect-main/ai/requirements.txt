@@ -1,0 +1,25 @@
+# CivicConnect Admin Task Classifier - Dependencies
+# Python >= 3.10 required
+
+# PyTorch (CPU or CUDA depending on environment)
+torch>=2.2.0
+
+# Hugging Face Transformers & Datasets
+transformers>=4.40.0
+datasets>=2.19.0
+accelerate>=0.29.0
+evaluate>=0.4.1
+
+# Machine Learning & Data Processing
+scikit-learn>=1.4.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# API & Web Serving
+fastapi>=0.110.0
+uvicorn>=0.29.0
+pydantic>=2.7.0
+
+# Utilities
+python-dotenv>=1.0.1
+requests>=2.31.0

@@ -1,0 +1,23 @@
+{
+  "datasetVersion": "dataset_v_test_suite",
+  "creationTime": "2026-09-18T15:47:13.949110+00:00",
+  "baseDatasetVersion": "dataset_v1.0",
+  "number_of_base_examples": 8000,
+  "number_of_feedback_examples": 0,
+  "oversample_factor": 2,
+  "total_train_examples": 8000,
+  "validation_examples": 1000,
+  "test_examples": 1000,
+  "exact_feedback_ids_used": [],
+  "class_distribution": {
+    "Roads": 1000,
+    "Water": 1000,
+    "Electricity": 1000,
+    "Sanitation": 1000,
+    "Drainage": 1000,
+    "Traffic": 1000,
+    "Public Health": 1000,
+    "Municipal Services": 1000
+  },
+  "preprocessing_version": "pii_sanitized_v1"
+}

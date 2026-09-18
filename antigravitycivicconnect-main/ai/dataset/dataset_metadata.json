@@ -1,0 +1,91 @@
+{
+  "dataset_version": "v1.0-10k-balanced",
+  "description": "CivicConnect 10,000 Unique Balanced Civic Complaint Dataset for Admin Task Classification",
+  "created_at": "2026-09-09T14:00:13.501768+00:00",
+  "total_records": 10000,
+  "num_classes": 8,
+  "departments": [
+    "Roads",
+    "Water",
+    "Electricity",
+    "Sanitation",
+    "Drainage",
+    "Traffic",
+    "Public Health",
+    "Municipal Services"
+  ],
+  "class_distribution": {
+    "Roads": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Water": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Electricity": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Sanitation": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Drainage": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Traffic": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Public Health": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    },
+    "Municipal Services": {
+      "total": 1250,
+      "train": 1000,
+      "validation": 125,
+      "test": 125
+    }
+  },
+  "splits": {
+    "train": {
+      "file": "train.csv",
+      "count": 8000,
+      "percentage": 80.0
+    },
+    "validation": {
+      "file": "validation.csv",
+      "count": 1000,
+      "percentage": 10.0
+    },
+    "test": {
+      "file": "test.csv",
+      "count": 1000,
+      "percentage": 10.0,
+      "status": "Isolated for unseen final evaluation only"
+    }
+  },
+  "quality_guarantees": {
+    "zero_duplicate": true,
+    "zero_cross_split_leakage": true,
+    "balanced_classes": true,
+    "human_in_the_loop_ready": true
+  }
+}

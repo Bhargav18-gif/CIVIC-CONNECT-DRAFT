@@ -1,0 +1,20 @@
+{
+  "dataset_version": "dataset_v1.3",
+  "base_examples": 240,
+  "new_examples_added": 1,
+  "total_train_examples": 241,
+  "validation_examples": 48,
+  "test_examples": 48,
+  "class_distribution": {
+    "Roads": 30,
+    "Water": 31,
+    "Electricity": 30,
+    "Sanitation": 30,
+    "Drainage": 30,
+    "Traffic": 30,
+    "Public Health": 30,
+    "Municipal Services": 30
+  },
+  "imbalanced_classes": [],
+  "created_at": 1788877480.7028506
+}

@@ -1,0 +1,51 @@
+{
+  "model_version": "civicconnect-admin-v1",
+  "base_model": "distilbert-base-uncased",
+  "num_labels": 8,
+  "id2label": {
+    "0": "Roads",
+    "1": "Water",
+    "2": "Electricity",
+    "3": "Sanitation",
+    "4": "Drainage",
+    "5": "Traffic",
+    "6": "Public Health",
+    "7": "Municipal Services"
+  },
+  "label2id": {
+    "Roads": 0,
+    "Water": 1,
+    "Electricity": 2,
+    "Sanitation": 3,
+    "Drainage": 4,
+    "Traffic": 5,
+    "Public Health": 6,
+    "Municipal Services": 7
+  },
+  "dataset_info": {
+    "total_samples": 10000,
+    "train_samples": 8000,
+    "validation_samples": 1000,
+    "test_samples": 1000
+  },
+  "validation_metrics": {
+    "eval_loss": 0.0031577988993376493,
+    "eval_accuracy": 1.0,
+    "eval_macro_precision": 1.0,
+    "eval_macro_recall": 1.0,
+    "eval_macro_f1": 1.0,
+    "eval_weighted_f1": 1.0,
+    "eval_runtime": 17.5182,
+    "eval_samples_per_second": 57.083,
+    "eval_steps_per_second": 1.827
+  },
+  "device": "CPU (Fine-tuning on multi-core CPU)",
+  "test_metrics": {
+    "accuracy": 0.999,
+    "macro_f1": 0.998999983999744,
+    "macro_precision": 0.9990079365079365,
+    "macro_recall": 0.999,
+    "weighted_f1": 0.998999983999744
+  },
+  "status": "production"
+}
